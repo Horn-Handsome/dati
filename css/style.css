@@ -1,0 +1,121 @@
+*{
+	margin: 0;
+	padding: 0;	
+    /*设置不会因为内边距和边框而撑开宽度和高度*/
+	box-sizing: border-box;
+}
+html,body{
+	/*设置艺术隐藏*/
+	overflow: hidden;
+	width: 100%;
+	height: 100%;
+	background: cornsilk;
+}
+.page{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	background: cornsilk;
+	transform: translateX(375px);
+	/*过度动画 1秒钟切换*/
+	transition: all 1s;
+	
+}
+.active{
+	transform: translateX(0px) !important;
+}
+
+.startGame{
+	display: flex;
+	/*主轴水平居中*/
+	justify-content: center;	
+	/*侧轴水平居中*/
+	align-items: center;
+}
+
+.startBtn{
+	width: 200px;
+	height: 60px;
+	line-height: 60px;
+	font-size: 30px;
+	border: none;
+	background: greenyellow;
+	color: #fff;
+	/*设置阴影不进行偏移*/
+	box-shadow: 0 0 30px deepskyblue;
+	border-radius: 10px;
+}
+.gaming{
+	background: deepskyblue;
+	padding: 60px;
+	/*display: flex;
+	/*竖直方向*/
+	/*flex-direction: column;
+	justify-content: center;
+	align-items: center;*/
+}
+.gaming h1 {
+	margin: 20px 0;
+	font-size: 26px;
+	color: #FFFFFF;
+	
+}
+.gaming .options>div{/*? 设置options里面的可选项文本样式*/
+	margin: 10px 40px;
+	padding: 5px 10px;
+	color: #efefef;
+	border-radius: 5px;
+}
+/*题目正确显示背景的样式*/
+.correct{
+	background: green;
+}
+/*题目错误显示背景的样式*/
+.error{
+	background: red;
+}
+
+.endGame{
+	display: flex;	
+	flex-direction: column;
+	
+	justify-content: center;
+	/*水平居中*/
+	align-items: center;
+}
+.endGame h1{
+	margin: 40px;
+	
+}
+
+.reStart{
+	width: 200px;
+	height: 60px;
+	line-height: 60px;
+	font-size: 30px;
+	border: none;
+	background: greenyellow;
+	color: #fff;
+	/*设置阴影不进行偏移*/
+	box-shadow: 0 0 30px deepskyblue;
+	border-radius: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
